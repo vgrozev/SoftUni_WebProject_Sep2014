@@ -1,0 +1,5 @@
+root (.HTML)
+images/ (snimki)
+styles/ (.CSS)
+scripts/ (.JS) --optional
+fonts/ (.TTF, .OTF) --optional
