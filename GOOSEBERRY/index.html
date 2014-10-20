@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SoftUNIfer</title>
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+    <style>
+        header {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding-top:0.5em;
+            width: auto;
+            height: 5em;
+            background: linear-gradient(azure, chocolate);
+            color: black;
+            font-family: 'Sorts Mill Goudy', serif;
+            text-align: center;
+        }
+
+            header span {
+                margin-top:0.3em;
+                font-weight:500;
+                font-size: xx-large;
+                transition: 1s;
+            }
+
+        header span:hover {
+            text-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+        }
+
+        header ul {
+            list-style:none;
+            margin:0;
+            margin-bottom:0.5em;
+            padding:0;
+            display:inline-block;
+            float:right;
+        }
+
+            header ul li{
+                margin-left:3em;
+                display: inline;
+                transition: 0.5s;
+            }
+
+            header ul li:last-of-type {
+                margin-right:4em;
+            }
+
+            header ul li:hover {
+                font-weight:bolder;
+            }
+            div.main {
+                background-color:chocolate;
+                height:40em;
+                display:inline-block;
+            }
+
+        img.map {
+            display: inline;
+            height: 90%;
+            width: 90%;
+            margin-left: 4em;
+            margin-top: 0.5em;
+            box-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+        }
+
+        .pinBoston {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: relative;
+            bottom: 24em;
+            right: 49em;
+        }
+
+        .pinCopenhagen {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: relative;
+            bottom: 31.1em;
+            left: 47.8em;
+        }
+
+        .pinBerlin {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: relative;
+            bottom: 30em;
+            left: 41.3em;
+        }
+
+        .pinPlovdiv {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: relative;
+            bottom: 28.2em;
+            left: 45.8em;
+        }
+        a {
+            text-decoration:none;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <header><span>Welcome to SoftUNI-fer</span><br />
+    <ul>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </header>
+    <div class="main">
+        <img class="map" src="../images/mapoftheworld.jpg" />
+        <img class="pinBoston" src="../images/map_pin.png" />
+        <img class="pinCopenhagen" src="../images/map_pin.png" />
+        <img class="pinPlovdiv" src="../images/map_pin.png" />
+        <img class="pinBerlin" src="../images/map_pin.png" />
+    </div>
+</body>
+</html>
