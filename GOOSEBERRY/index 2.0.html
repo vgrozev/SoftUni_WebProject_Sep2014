@@ -1,0 +1,727 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SoftUNIfer</title>
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+            font-family: 'Sorts Mill Goudy', serif;
+        }
+        
+        header {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding-top: 0.5em;
+            width: auto;
+            height: 5em;
+            background: linear-gradient(azure, chocolate);
+            color: black;
+            font-family: 'Sorts Mill Goudy', serif;
+            text-align: center;
+        }
+
+            header span {
+                margin-top: 0.3em;
+                font-weight: 500;
+                font-size: xx-large;
+                transition: 1s;
+            }
+
+                header span:hover {
+                    text-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+                }
+
+            header ul {
+                list-style: none;
+                margin: 0;
+                margin-bottom: 0.5em;
+                padding: 0;
+                display: inline-block;
+                float: right;
+            }
+
+                header ul li {
+                    margin-left: 1.8em;
+                    display: inline;
+                    transition: 0.5s;
+                }
+
+                    header ul li:last-of-type {
+                        margin-right: 4em;
+                    }
+
+                    header ul li:hover {
+                        font-weight: bolder;
+                    }
+
+        #aboutus {
+            background-color: chocolate;
+            height: 100%;
+            display: inline-block;
+        }
+
+        img.map {
+            display: inline;
+            height: 90%;
+            width: 90%;
+            margin-left: 4em;
+            margin-top: 0.5em;
+            box-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+        }
+
+        .pinBoston {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: absolute;
+            top: 16em;
+            left: 26em;
+        }
+
+        .pinCopenhagen {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: absolute;
+            top: 11.8em;
+            left: 48.2em;
+        }
+
+        .pinBerlin {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: absolute;
+            top: 13rem;
+            left: 47em;
+        }
+
+        .pinPlovdiv {
+            display: inline;
+            height: 6%;
+            width: 3%;
+            position: absolute;
+            top: 15rem;
+            left: 48.8em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #motto {
+            font-size: small;
+            float: left;
+            margin-left: 2rem;
+            letter-spacing: 1px;
+            opacity: 0;
+        }
+
+
+
+        .star {
+            display: inline;
+            height: 5%;
+            width: 5%;
+            float: left;
+            margin-left: 1rem;
+            margin-top: -0.5rem;
+            opacity:0.4;
+        }
+
+        #motto:hover {
+            font-weight: bolder;
+            text-shadow: none;
+            opacity: 1;
+        }
+
+        #mottoouter:hover * {
+            opacity:1;
+        }
+
+        #figuremap {
+            margin: 0;
+            height:42rem;
+        }
+
+            #figuremap figure:first-of-type {
+                margin: 0;
+            }
+
+            #figuremap #captionBoston {
+                display: inline;
+                position: absolute;
+                top: 16.5rem;
+                left: 25.8rem;
+                color: black;
+                text-shadow: 1px 1px 1px yellow;
+                opacity: 0;
+                padding-top: 2rem;
+                margin: 0;
+                font-weight:bold;
+            }
+
+                #figuremap #captionBoston:hover {
+                    opacity: 1;
+                }
+
+
+            #figuremap #captionCopenhagen {
+                display: inline;
+                position: absolute;
+                top: 12.3rem;
+                left: 48rem;
+                color: black;
+                text-shadow: 1px 1px 2px yellow;
+                opacity: 0;
+                padding-left: 2rem;
+                padding-top: 1.2rem;
+                margin: 0;
+                font-weight: bold;
+            }
+
+            #figuremap #captionCopenhagen:hover {
+                opacity: 1;
+            }
+
+            #figuremap #captionPlovdiv {
+                display: inline;
+                position: absolute;
+                top: 15.5rem;
+                left: 47.2rem;
+                color: black;
+                text-shadow: 1px 1px 1px yellow;
+                opacity: 0;
+                padding-top: 2rem;
+                margin: 0;
+                font-weight: bold;
+            }
+
+                #figuremap #captionPlovdiv:hover {
+                    opacity: 1;
+                }
+
+            #figuremap #captionBerlin {
+                display: inline;
+                position: absolute;
+                bottom: 27rem;
+                left: 46rem;
+                color: black;
+                text-shadow: 1px 1px 1px yellow;
+                opacity: 0;
+                padding-top: 2rem;
+                margin: 0;
+                font-weight: bold;
+            }
+
+                #figuremap #captionBerlin:hover {
+                    opacity: 1;
+                }
+
+
+        #Svetoslavinfo {
+            border: 1px solid black;
+            color: black;
+            width: 12rem;
+            height: 28rem;
+            margin-right: 1rem;
+            display: inline-block;
+            margin-left: 6.5rem;
+        }
+
+            #Svetoslavinfo img {
+                width: 100%;
+                height: 180px;
+                transition: opacity 350ms ease-in-out;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+
+            }
+
+            #Svetoslavinfo figure {
+                overflow: hidden;
+                margin: 0;
+                margin-top: -1rem;
+                margin-bottom: -1rem;
+            }
+
+                #Svetoslavinfo figure figcaption {
+                    position: relative;
+                    display: block;
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    transition: transform 350ms ease-in-out;
+                    left: 4.2rem;
+                    top: 3.5rem;
+                    visibility: collapse;
+                    font-size:x-large;
+                    font-weight:bold;
+                    text-shadow:1px 1px 1px yellow;
+                }
+            
+             #Svetoslavinfo img:hover {
+                opacity: 0.4;
+            }
+
+            #Svetoslavinfo figure:hover figcaption {
+                transform: translateY(+220%);
+                visibility: visible;
+            }
+
+        #Svetoslavinfo:hover {
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+
+            #Svetoslavinfo p {
+                margin:0;
+            }
+
+        #Vladimirinfo {
+            border: 1px solid black;
+            color: black;
+            width: 12rem;
+            height: 28rem;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+        #Vladimirinfo:hover {
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+
+            #Vladimirinfo img {
+                width: 100%;
+                height: 180px;
+                transition: opacity 350ms ease-in-out;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            #Vladimirinfo figure {
+                overflow: hidden;
+                margin: 0;
+                margin-top: -1rem;
+                margin-bottom: -1rem;
+            }
+
+                #Vladimirinfo figure figcaption {
+                    position: relative;
+                    display: block;
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    transition: transform 350ms ease-in-out;
+                    left: 4.2rem;
+                    top: 3.5rem;
+                    visibility: collapse;
+                    font-size: x-large;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 1px yellow;
+                }
+
+        #Vladimirinfo img:hover {
+            opacity: 0.4;
+            
+        }
+
+            #Vladimirinfo figure:hover figcaption {
+                transform: translateY(+220%);
+                visibility: visible;
+            }
+
+            #Vladimirinfo:hover {
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            }
+
+            #Vladimirinfo p {
+                margin: 0;
+            }
+
+        #Kirilinfo {
+            border: 1px solid black;
+            color: black;
+            width: 12rem;
+            height: 28rem;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+            #Kirilinfo img {
+                width: 100%;
+                height: 180px;
+                transition: opacity 350ms ease-in-out;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+        #Kirilinfo img:hover {
+            opacity: 0.4;
+        }
+
+            #Kirilinfo figure {
+                overflow: hidden;
+                margin: 0;
+                margin-top: -1rem;
+                margin-bottom: -1rem;
+            }
+
+                #Kirilinfo figure figcaption {
+                    position: relative;
+                    display: block;
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    transition: transform 350ms ease-in-out;
+                    left: 2rem;
+                    top: 3.5rem;
+                    visibility: collapse;
+                    font-size: x-large;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 1px yellow;
+                }
+            #Kirilinfo:hover {
+                box-shadow:1px 1px 2px rgba(0,0,0,0.7);
+            }
+
+            #Kirilinfo figure:hover figcaption {
+                transform: translateY(+220%);
+                visibility: visible;
+            }
+
+            #Kirilinfo:hover {
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            }
+
+            #Kirilinfo p {
+                margin: 0;
+            }
+
+
+        #Nikolayinfo {
+            border: 1px solid black;
+            color: black;
+            width: 12rem;
+            height: 28rem;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+            #Nikolayinfo img {
+                width: 100%;
+                height: 180px;
+                transition: opacity 350ms ease-in-out;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+                #Nikolayinfo img:hover {
+                    opacity: 0.4;
+                }
+
+            #Nikolayinfo figure {
+                overflow: hidden;
+                margin: 0;
+                margin-top: -1rem;
+                margin-bottom: -1rem;
+            }
+
+                #Nikolayinfo figure figcaption {
+                    position: relative;
+                    display: block;
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    transition: transform 350ms ease-in-out;
+                    left: 3.5rem;
+                    top: 3.5rem;
+                    visibility: collapse;
+                    font-size: x-large;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 1px yellow;
+                }
+
+            #Nikolayinfo:hover {
+                box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            }
+
+            #Nikolayinfo figure:hover figcaption {
+                transform: translateY(+220%);
+                visibility: visible;
+            }
+
+            #Nikolayinfo:hover {
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            }
+
+            #Nikolayinfo p {
+                margin: 0;
+            }
+
+
+        #Atanasinfo {
+            border: 1px solid black;
+            color: black;
+            width: 12rem;
+            height: 28rem;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+            #Atanasinfo img {
+                width: 100%;
+                height: 180px;
+                transition: opacity 350ms ease-in-out;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+                #Atanasinfo img:hover {
+                    opacity: 0.4;
+                }
+
+            #Atanasinfo figure {
+                overflow: hidden;
+                margin: 0;
+                margin-top: -1rem;
+                margin-bottom: -1rem;
+            }
+
+                #Atanasinfo figure figcaption {
+                    position: relative;
+                    display: block;
+                    transform: translateY(-100%);
+                    z-index: 1;
+                    transition: transform 350ms ease-in-out;
+                    left: 3.5rem;
+                    top: 3.5rem;
+                    visibility: collapse;
+                    font-size: x-large;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 1px yellow;
+                }
+
+            #Atanasinfo:hover {
+                box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            }
+
+            #Atanasinfo figure:hover figcaption {
+                transform: translateY(+220%);
+                visibility: visible;
+            }
+
+            #Atanasinfo:hover {
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            }
+
+            #Atanasinfo p {
+                margin: 0;
+            }
+
+        #contactForm{
+            background: linear-gradient(chocolate, azure);
+        }
+
+        #contactForm fieldset:hover {
+          border-color:lightblue;
+          box-shadow:1px 1px 1px rgba(0,0,0,0.3);
+        }
+    
+
+        #contactForm h1 {
+            font-size: x-large;
+            color: black;
+            margin: 0;
+            padding-top:1.5rem;
+        }
+
+        #contactForm h2 {
+            font-size: medium;
+            color: black;
+            margin: 0;
+       
+        }
+
+            #contactForm fieldset {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                margin-left: 27rem;
+                 font-size: medium;
+                color: black;
+                display: inline;
+            }
+
+        #contactForm input {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+            #contactForm input.reset {
+                height: 4em;
+                width: 13.5em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                margin-left: 27.5rem;
+                 font-weight: bold;
+            }
+
+            #contactForm input.submit {
+                height: 4em;
+                width: 13.5em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                font-weight: bold;
+            }
+
+
+        #contactForm .form {
+            width: 10rem;
+            display: inline-block;
+            vertical-align: top;
+            display: inline;
+            align-content:center;
+        }
+
+        #contactForm legend {
+            text-align: center;
+        }
+
+        #contactForm p {
+            padding-left: 0.4em;
+        }
+
+        #contactForm div {
+            display: inline;
+        }
+
+        #contactForm select {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        footer {
+            width:100%;
+            justify-content:center;
+        }
+
+        #SoftUniLogo {
+            width: 10%;
+            position: absolute;
+            top: 101rem;
+            left: 41rem;
+            border: 1px solid darkblue;
+            box-shadow: 1px 1px 8px;
+            transition: 7s;
+        }
+
+            #SoftUniLogo:hover {
+                transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg) rotate3d(0, 0, 1, 360deg);
+            }
+
+            #profiles {
+                display:inline-block;
+                width:100%;
+            }
+
+        #profiles h1{
+            text-align:center;
+        }
+        
+        #videos {
+            background:linear-gradient(azure, navy);
+            
+        }
+        footer {
+            background:linear-gradient(navy,lightblue);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>Welcome to SoftUNI-fer</span><br />
+        <div id="mottoouter" style="display: inline-block; float: left; width: 45rem; "><img class="star" src="http://upload.wikimedia.org/wikipedia/commons/9/9c/Golden_star.svg" /><span id="motto"><i style=" margin-left: -4rem; padding-left: 3rem;">Across ages, across countries and oceans - together we stand for a top mark in HTML5 and CSS!!!</i></span></div>
+        <ul>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#contactForm">Contact</a></li>
+            <li><a href="#videos">SoftUni Videos</a></li>
+            <li><a href="#div2">Div2</a></li>
+           </ul>
+    </header>
+    <div id="aboutus">
+        <figure id="figuremap">
+            <img class="map" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/1798_Payne_Map_of_the_World_%28pre_1800_American_Map%29_-_Geographicus_-_World-payne-1798.jpg/1280px-1798_Payne_Map_of_the_World_%28pre_1800_American_Map%29_-_Geographicus_-_World-payne-1798.jpg" />
+            <figure><img class="pinBoston" src="https://openclipart.org/image/800px/svg_to_png/169839/map_pin.png" /><figcaption id="captionBoston"><a href="#profiles">Boston</a></figcaption></figure>
+            <figure><img class="pinCopenhagen" src="https://openclipart.org/image/800px/svg_to_png/169839/map_pin.png" /><figcaption id="captionCopenhagen"><a href="#profiles">Copenhagen</a></figcaption></figure>
+            <figure><img class="pinPlovdiv" src="https://openclipart.org/image/800px/svg_to_png/169839/map_pin.png" /><figcaption id="captionPlovdiv"><a href="#profiles">Plovdiv|Pleven</a></figcaption></figure>
+            <figure><img class="pinBerlin" src="https://openclipart.org/image/800px/svg_to_png/169839/map_pin.png" /><figcaption id="captionBerlin"><a href="#profiles">Berlin</a></figcaption></figure>
+        </figure>
+        <div id="profiles">
+            <h1>Who we are?</h1><br />
+        <div id="Svetoslavinfo"><p style="text-align: center; margin-top:0.5rem;"><b>Svetoslav Haritonov</b></p><figure><figcaption>Berlin</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/b88ebb59-3271-4418-8cf2-47c64a8cda9f" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+        <div id="Vladimirinfo"><p style="text-align: center; margin-top:0.5rem;"><b>Vladimir Stoyanov</b></p><figure><figcaption>Boston</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/085988e7-c8cb-4eea-90fa-8e272089e62e" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+        <div id="Kirilinfo"><p style="text-align: center; margin-top:0.5rem;"><b>Kiril Manin</b></p><figure><figcaption>Copenhagen</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/3bedcb7e-06f4-423b-853d-14b9a6f9e0c1" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+        <div id="Nikolayinfo"><p style="text-align: center; margin-top:0.5rem;"><b>Nikolay Blazhev</b></p><figure><figcaption>Pleven</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/03672cb1-d761-46b8-b9a4-a67684b82ee8" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+        <div id="Atanasinfo"><p style="text-align: center; margin-top:0.5rem;"><b>Atanas Kaynarov</b></p><figure><figcaption>Plovdiv</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/6a02f1eb-1767-4feb-a494-262f983f5731" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+    </div>
+    </div>
+    <div id="contactForm">
+        <h1 style="text-align:center">Want to talk to us about SoftUni?</h1><br />
+        <h2 style="text-align:center">Please submit the form below and we will get right back to you!</h2><br />
+        <form class="form">
+            <fieldset style="vertical-align:middle;">
+                <legend>Query details</legend><br />
+                <input type="text" id="firstname" placeholder="Your first name" tabindex="1" /><input type="text" id="lastname" placeholder="Your last Name" tabindex="2" /><br />
+                <input type="text" id="email" placeholder="Your (valid) email" pattern="[a-zA-z]*@[a-zA-z]*.[a-zA-Z]*" tabindex="2" /><input type="text" id="phonenumber" placeholder="Tel Number (digits only)" pattern="[0-9]*" tabindex="3" /><br />
+                <input type="text" id="website" placeholder="Website" tabindex="5" /><select id="country" required style="margin-left: 0.5em; width: 9.8rem; height: 1.7em;" tabindex="10"><option>Country</option><option>Bulgaria</option><option>Denmark</option><option>USA</option><option>Germany</option></select>
+                <p style="width:12.5em">Birthday</p>
+                <input type="date" id="date" tabindex="6" /> <img id="SoftUniLogo" src="http://www.nakov.com/wp-content/uploads/2012/03/SoftUni-Logo.png"><br /><br />
+                <p style="width:12.5em">Gender</p>
+                <input type="radio" name="gender" id="gender1" tabindex="7" /> <label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender2" tabindex="8" /> <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender3" tabindex="9" /> <label for="gender">Other</label> <br />
+                <br />
+                <p>Information about SoftUni</p>
+                <textarea style="width:26em; margin-left:0.5em;" rows="5" required placeholder="What is your question?" tabindex="21"></textarea>
+            </fieldset>
+            <br />
+            <input class="reset" type="reset" value="Clear Form" tabindex="23" />
+            <input class="submit" value="Submit Form" type="submit" tabindex="22" />
+        </form>
+        <br /><br />
+        <h2 style="text-align:center">Looking forward to hear from you!</h2><br />
+    </div>
+    <div id="videos">
+        <h1 style="text-align:center; margin:0">Quickstart videos of SoftUni</h1><br />
+        <iframe style="margin-right: 2.5rem; margin-left: 2rem;"width="360" height="240" src="//www.youtube.com/embed/FDlYbapueHw" frameborder="0" allowfullscreen></iframe>
+        <iframe style="margin-right: 2.5rem;"width="360" height="240" src="//www.youtube.com/embed/VcepQ-admxA" frameborder="0" allowfullscreen></iframe>
+        <iframe style="margin-right: 2.5rem;" width="360" height="240" src="//www.youtube.com/embed/pu_2VTnggSo" frameborder="0" allowfullscreen></iframe>
+        <iframe style="margin-right: 2.5rem; margin-left: 2rem; " width="360" height="240" src="//www.youtube.com/embed/8Pjll9ZM-gs" frameborder="0" allowfullscreen></iframe>
+        <iframe style="margin-right: 2.5rem;" width="360" height="240" src="//www.youtube.com/embed/Xg2iuWUkY8w" frameborder="0" allowfullscreen></iframe>
+        <iframe style="margin-right: 2.5rem;" width="360" height="240" src="//www.youtube.com/embed/M4zua8s3P84" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <footer>
+        <br />
+        <section>
+            <ul style="list-style:none; margin:0">
+                <li style="line-height:2rem"><b>&copy; Gooseberry Design 2014, Team Project Work</b><br /></li>
+                <li style="line-height:2rem"><b> Web-Fundamentals Course - Software University, Bulgaria </b></li>
+            </ul>
+        </section>
+        <section style="width:25%">
+            <div style="background:white; margin-left:1.5rem;" class="fb-like-box" data-href="https://www.facebook.com/SoftwareUniversity" data-width="250" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+        </section>
+    </footer>
+</body>
+</html>
