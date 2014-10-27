@@ -1,31 +1,11 @@
-﻿@media only screen and (max-width:1872px) {
-
-	.image {
-		width:  21%;
-	}
-
+@media only screen and (max-width: 1300px) {
+	.mapWrap {
+		display: none;
+	}	
 }
 
-@media only screen and (max-width:1677px) {
-
-	.image {
-		margin:  10px;
+@media only screen and (max-width: 800px) {
+	#mottoouter {
+		display: none;
 	}
-
-}
-
-@media only screen and (max-width:1068px) {
-
-	.image {
-		width:  47%;
-	}
-
-}
-
-@media only screen and (max-width:731px) {
-
-	.image {
-		width:  9%;
-	}
-
 }

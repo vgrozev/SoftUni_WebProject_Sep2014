@@ -1,4 +1,4 @@
-﻿   * {
+   * {
             font-family: 'Sorts Mill Goudy', serif;
         }
     
@@ -50,10 +50,10 @@ header {
 
                      #motto {
             font-size: small;
-            float: left;
             margin-left: 2rem;
             letter-spacing: 1px;
-            opacity: 0;
+						 font-style: italic;
+						 opacity: 0;
         }
 
             #motto i {
@@ -86,3 +86,6 @@ header {
         #mottoouter:hover * {
             opacity:1;
         }
+
+
+

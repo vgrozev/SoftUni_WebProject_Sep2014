@@ -1,492 +1,422 @@
-﻿#aboutus {
-            background-color: chocolate;
-            height: 100%;
-            display: inline-block;
-            width:100%;
-        }
-
-        img.map {
-            display: inline;
-            height: 90%;
-            width: 90%;
-            margin-left: 4em;
-            margin-top: 0.5em;
-            box-shadow: 5px 5px 6px rgba(0,0,0,0.7);
-            position:relative;
-        }
-
-        .pinBoston {
-            display: inline;
-            height: 6%;
-            width: 5%;
-         
-        }
-
-        .pinCopenhagen {
-            display: inline;
-            height: 6%;
-            width: 8%;
-        }
-
-        .pinBerlin {
-            display: inline;
-            height: 6%;
-            width: 8%;
-        }
-
-        .pinPlovdiv {
-            display: inline;
-            height: 6%;
-            width: 8%;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-       
-
-        #figuremap {
-            margin: 0;
-            height:42rem;
-            position:relative;
-        }
-
-            #figuremap figure:first-of-type {
-                margin: 0;
-            }
-
-            #figuremap #captionBoston {
-                display: inline;
-                position: absolute;
-                color: black;
-                text-shadow: 1px 1px 1px yellow;
-                opacity: 0;
-                padding-top: 2rem;
-                margin: 0;
-                font-weight: bold;
-                left: -0.4rem;
-                top: 0.6rem;
-            }
-
-                #figuremap #captionBoston:hover {
-                    opacity: 1;
-                }
-
-
-            #figuremap #captionCopenhagen {
-                display: inline;
-                position: absolute;
-                color: black;
-                text-shadow: 1px 1px 2px yellow;
-                opacity: 0;
-                padding-left: 2rem;
-                padding-bottom: 1.2rem;
-                margin: 0;
-                font-weight: bold;
-                left: 0.2rem;
-                top: 0.2rem;
-            }
-
-            #figuremap #captionCopenhagen:hover {
-                opacity: 1;
-            }
-
-            #figuremap #captionPlovdiv {
-                display: inline;
-                position: absolute;
-                color: black;
-                text-shadow: 1px 1px 1px yellow;
-                opacity: 0;
-                padding-top: 2rem;
-                margin: 0;
-                font-weight: bold;
-                left: -2.3rem;
-                top: 0.2rem;
-            }
-
-                #figuremap #captionPlovdiv:hover {
-                    opacity: 1;
-                }
-
-            #figuremap #captionBerlin {
-                display: inline;
-                position: absolute;
-                color: black;
-                text-shadow: 1px 1px 1px yellow;
-                opacity: 0;
-                padding-top: 2rem;
-                margin: 0;
-                font-weight: bold;
-                left: -1.4rem;
-                top: 0rem;
-            }
-
-                #figuremap #captionBerlin:hover {
-                    opacity: 1;
-                }
-
-        .pinpluscaptionBoston {
-            position: absolute;
-            top: 10.5rem;
-            left: 26.5rem;
-            margin: 0;
-        }
-
-        .pinpluscaptionCopenhagen {
-            position: absolute;
-            top: 6.5rem;
-            left: 48.1rem;
-            margin: 0;
-        }
-
-        .pinpluscaptionBerlin {
-            position: absolute;
-            top: 7.3rem;
-            left: 47rem;
-            margin: 0;
-        }
-
-        .pinpluscaptionPl {
-            position: absolute;
-            top: 9rem;
-            left: 48.5rem;
-            margin: 0;
-        }
-        
-        
-            #profiles {
-                display:inline-block;
-                width:100%;
-            }
-
-        #profiles h1{
-            text-align:center;
-        }
-
-        #Svetoslavinfo {
-            border: 1px solid black;
-            color: black;
-            width: 12rem;
-            height: 28rem;
-            margin-right: 1rem;
-            display: inline-block;
-            margin-left: 6.5rem;
-
-        }
-
-            #Svetoslavinfo img {
-                width: 100%;
-                height: 180px;
-                transition: opacity 350ms ease-in-out;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-
-            }
-
-            #Svetoslavinfo figure {
-                overflow: hidden;
-                margin: 0;
-                margin-top: -1rem;
-                margin-bottom: -1rem;
-            }
-            #Svetoslavinfo p {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-            
-            #Svetoslavinfo figure figcaption {
-                position: relative;
-                display: block;
-                transform: translateY(-100%);
-                z-index: 1;
-                transition: transform 350ms ease-in-out;
-                left: 4.2rem;
-                top: 3.5rem;
-                visibility: collapse;
-                font-size: x-large;
-                font-weight: bold;
-                text-shadow: 1px 1px 1px yellow;
-            }
-            
-             #Svetoslavinfo img:hover {
-                opacity: 0.4;
-            }
-
-            #Svetoslavinfo figure:hover figcaption {
-                transform: translateY(+220%);
-                visibility: visible;
-            }
-
-        #Svetoslavinfo:hover {
-            box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-        }
-
-            #Svetoslavinfo p {
-                margin:0;
-            }
-
-        #Vladimirinfo {
-            border: 1px solid black;
-            color: black;
-            width: 12rem;
-            height: 28rem;
-            margin-right: 1rem;
-            display: inline-block;
-        }
-
-        #Vladimirinfo:hover {
-            box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-        }
-
-            #Vladimirinfo img {
-                width: 100%;
-                height: 180px;
-                transition: opacity 350ms ease-in-out;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-            }
-
-            #Vladimirinfo p {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-            
-
-            #Vladimirinfo figure {
-                overflow: hidden;
-                margin: 0;
-                margin-top: -1rem;
-                margin-bottom: -1rem;
-            }
-
-                #Vladimirinfo figure figcaption {
-                    position: relative;
-                    display: block;
-                    transform: translateY(-100%);
-                    z-index: 1;
-                    transition: transform 350ms ease-in-out;
-                    left: 4.2rem;
-                    top: 3.5rem;
-                    visibility: collapse;
-                    font-size: x-large;
-                    font-weight: bold;
-                    text-shadow: 1px 1px 1px yellow;
-                }
-
-        #Vladimirinfo img:hover {
-            opacity: 0.4;
-            
-        }
-
-            #Vladimirinfo figure:hover figcaption {
-                transform: translateY(+220%);
-                visibility: visible;
-            }
-
-            #Vladimirinfo:hover {
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            }
-
-            #Vladimirinfo p {
-                margin: 0;
-            }
-
-        #Kirilinfo {
-            border: 1px solid black;
-            color: black;
-            width: 12rem;
-            height: 28rem;
-            margin-right: 1rem;
-            display: inline-block;
-        }
-
-            #Kirilinfo img {
-                width: 100%;
-                height: 180px;
-                transition: opacity 350ms ease-in-out;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-            }
-
-        #Kirilinfo img:hover {
-            opacity: 0.4;
-        }
-
-            #Kirilinfo figure {
-                overflow: hidden;
-                margin: 0;
-                margin-top: -1rem;
-                margin-bottom: -1rem;
-            }
-
-            #Kirilinfo p {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-            
-
-                #Kirilinfo figure figcaption {
-                    position: relative;
-                    display: block;
-                    transform: translateY(-100%);
-                    z-index: 1;
-                    transition: transform 350ms ease-in-out;
-                    left: 2rem;
-                    top: 3.5rem;
-                    visibility: collapse;
-                    font-size: x-large;
-                    font-weight: bold;
-                    text-shadow: 1px 1px 1px yellow;
-                }
-
-
-            #Kirilinfo:hover {
-                box-shadow:1px 1px 2px rgba(0,0,0,0.7);
-            }
-
-            #Kirilinfo figure:hover figcaption {
-                transform: translateY(+220%);
-                visibility: visible;
-            }
-
-            #Kirilinfo:hover {
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            }
-
-            #Kirilinfo p {
-                margin: 0;
-            }
-
-
-        #Nikolayinfo {
-            border: 1px solid black;
-            color: black;
-            width: 12rem;
-            height: 28rem;
-            margin-right: 1rem;
-            display: inline-block;
-        }
-
-            #Nikolayinfo img {
-                width: 100%;
-                height: 180px;
-                transition: opacity 350ms ease-in-out;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-            }
-
-
-            #Nikolayinfo p {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-            
-
-                #Nikolayinfo img:hover {
-                    opacity: 0.4;
-                }
-
-            #Nikolayinfo figure {
-                overflow: hidden;
-                margin: 0;
-                margin-top: -1rem;
-                margin-bottom: -1rem;
-            }
-
-                #Nikolayinfo figure figcaption {
-                    position: relative;
-                    display: block;
-                    transform: translateY(-100%);
-                    z-index: 1;
-                    transition: transform 350ms ease-in-out;
-                    left: 3.5rem;
-                    top: 3.5rem;
-                    visibility: collapse;
-                    font-size: x-large;
-                    font-weight: bold;
-                    text-shadow: 1px 1px 1px yellow;
-                }
-
-            #Nikolayinfo:hover {
-                box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-            }
-
-            #Nikolayinfo figure:hover figcaption {
-                transform: translateY(+220%);
-                visibility: visible;
-            }
-
-            #Nikolayinfo:hover {
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            }
-
-            #Nikolayinfo p {
-                margin: 0;
-            }
-
-
-        #Atanasinfo {
-            border: 1px solid black;
-            color: black;
-            width: 12rem;
-            height: 28rem;
-            margin-right: 1rem;
-            display: inline-block;
-        }
-
-            #Atanasinfo img {
-                width: 100%;
-                height: 180px;
-                transition: opacity 350ms ease-in-out;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-            }
-
-            #Atanasinfo p {
-                text-align: center;
-                margin-top: 0.5rem;
-            }
-
-                #Atanasinfo img:hover {
-                    opacity: 0.4;
-                }
-
-            #Atanasinfo figure {
-                overflow: hidden;
-                margin: 0;
-                margin-top: -1rem;
-                margin-bottom: -1rem;
-            }
-
-                #Atanasinfo figure figcaption {
-                    position: relative;
-                    display: block;
-                    transform: translateY(-100%);
-                    z-index: 1;
-                    transition: transform 350ms ease-in-out;
-                    left: 3.5rem;
-                    top: 3.5rem;
-                    visibility: collapse;
-                    font-size: x-large;
-                    font-weight: bold;
-                    text-shadow: 1px 1px 1px yellow;
-                }
-
-            #Atanasinfo:hover {
-                box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-            }
-
-            #Atanasinfo figure:hover figcaption {
-                transform: translateY(+220%);
-                visibility: visible;
-            }
-
-            #Atanasinfo:hover {
-                box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-            }
-
-            #Atanasinfo p {
-                margin: 0;
-            }
+#aboutus {
+	background-color: chocolate;
+	display: block;
+}
+
+img.map {
+	max-width: 100%;
+	box-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.mapWrap {
+	width: 1280px;
+	margin: auto;
+	padding: 30px;
+}
+
+#figuremap a {
+	text-decoration: none;
+	color: darkgrey;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#figuremap {
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+
+#figuremap figure {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+#figuremap figure img {
+	width: 50px;
+}
+
+#figuremap figure figcaption {
+	color: black;
+	text-shadow: 1px 1px 1px yellow;
+	position: absolute;
+font-weight: bold;
+}
+
+#figuremap .pinBoston {
+	top: 165px;
+	left: 410px;
+}
+
+#figuremap .pinBoston figcaption {
+	top: 40px;
+	left: 10px;
+
+}
+
+#figuremap .pinCopenhagen {
+	top: 100px;
+	left: 790px;
+}
+
+#figuremap .pinCopenhagen figcaption {
+	top: 20px;
+	left: -10px;
+}
+
+#figuremap .pinBulgaria {
+	top: 150px;
+	left: 800px;
+}
+
+#figuremap .pinBulgaria figcaption {
+	top: 20px;
+	left: 10px;
+}
+
+#profiles {
+	text-align: center;
+display:inline-block;
+width:100%;
+}
+
+#profiles h1{
+text-align:center;
+}
+
+#Svetoslavinfo {
+border: 1px solid black;
+color: black;
+width: 12rem;
+height: 28rem;
+margin-right: 1rem;
+display: inline-block;
+
+}
+
+#Svetoslavinfo img {
+width: 100%;
+height: 180px;
+transition: opacity 350ms ease-in-out;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+
+}
+
+#Svetoslavinfo figure {
+overflow: hidden;
+margin: 0;
+margin-top: -1rem;
+margin-bottom: -1rem;
+}
+#Svetoslavinfo p {
+text-align: center;
+margin-top: 0.5rem;
+}
+
+#Svetoslavinfo figure figcaption {
+position: relative;
+display: block;
+transform: translateY(-100%);
+z-index: 1;
+transition: transform 350ms ease-in-out;
+left: 3.2rem;
+top: 3.5rem;
+visibility: collapse;
+font-size: x-large;
+font-weight: bold;
+text-shadow: 1px 1px 1px yellow;
+}
+
+#Svetoslavinfo img:hover {
+opacity: 0.4;
+}
+
+#Svetoslavinfo figure:hover figcaption {
+transform: translateY(+220%);
+visibility: visible;
+}
+
+#Svetoslavinfo:hover {
+box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#Svetoslavinfo p {
+margin:0;
+}
+
+#Vladimirinfo {
+border: 1px solid black;
+color: black;
+width: 12rem;
+height: 28rem;
+margin-right: 1rem;
+display: inline-block;
+}
+
+#Vladimirinfo:hover {
+box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+#Vladimirinfo img {
+width: 100%;
+height: 180px;
+transition: opacity 350ms ease-in-out;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+#Vladimirinfo p {
+text-align: center;
+margin-top: 0.5rem;
+}
+
+
+#Vladimirinfo figure {
+overflow: hidden;
+margin: 0;
+margin-top: -1rem;
+margin-bottom: -1rem;
+}
+
+#Vladimirinfo figure figcaption {
+position: relative;
+display: block;
+transform: translateY(-100%);
+z-index: 1;
+transition: transform 350ms ease-in-out;
+left: 3.2rem;
+top: 3.5rem;
+visibility: collapse;
+font-size: x-large;
+font-weight: bold;
+text-shadow: 1px 1px 1px yellow;
+}
+
+#Vladimirinfo img:hover {
+opacity: 0.4;
+
+}
+
+#Vladimirinfo figure:hover figcaption {
+transform: translateY(+220%);
+visibility: visible;
+}
+
+#Vladimirinfo:hover {
+box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#Vladimirinfo p {
+margin: 0;
+}
+
+#Kirilinfo {
+border: 1px solid black;
+color: black;
+width: 12rem;
+height: 28rem;
+margin-right: 1rem;
+display: inline-block;
+}
+
+#Kirilinfo img {
+width: 100%;
+height: 180px;
+transition: opacity 350ms ease-in-out;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+#Kirilinfo img:hover {
+opacity: 0.4;
+}
+
+#Kirilinfo figure {
+overflow: hidden;
+margin: 0;
+margin-top: -1rem;
+margin-bottom: -1rem;
+}
+
+#Kirilinfo p {
+text-align: center;
+margin-top: 0.5rem;
+}
+
+
+#Kirilinfo figure figcaption {
+position: relative;
+display: block;
+transform: translateY(-100%);
+z-index: 1;
+transition: transform 350ms ease-in-out;
+left: 1rem;
+top: 3.5rem;
+visibility: collapse;
+font-size: x-large;
+font-weight: bold;
+text-shadow: 1px 1px 1px yellow;
+}
+
+
+#Kirilinfo:hover {
+box-shadow:1px 1px 2px rgba(0,0,0,0.7);
+}
+
+#Kirilinfo figure:hover figcaption {
+transform: translateY(+220%);
+visibility: visible;
+}
+
+#Kirilinfo:hover {
+box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#Kirilinfo p {
+margin: 0;
+}
+
+
+#Nikolayinfo {
+border: 1px solid black;
+color: black;
+width: 12rem;
+height: 28rem;
+margin-right: 1rem;
+display: inline-block;
+}
+
+#Nikolayinfo img {
+width: 100%;
+height: 180px;
+transition: opacity 350ms ease-in-out;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+
+#Nikolayinfo p {
+text-align: center;
+margin-top: 0.5rem;
+}
+
+
+#Nikolayinfo img:hover {
+opacity: 0.4;
+}
+
+#Nikolayinfo figure {
+overflow: hidden;
+margin: 0;
+margin-top: -1rem;
+margin-bottom: -1rem;
+}
+
+#Nikolayinfo figure figcaption {
+position: relative;
+display: block;
+transform: translateY(-100%);
+z-index: 1;
+transition: transform 350ms ease-in-out;
+left: 3rem;
+top: 3.5rem;
+visibility: collapse;
+font-size: x-large;
+font-weight: bold;
+text-shadow: 1px 1px 1px yellow;
+}
+
+#Nikolayinfo:hover {
+box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+#Nikolayinfo figure:hover figcaption {
+transform: translateY(+220%);
+visibility: visible;
+}
+
+#Nikolayinfo:hover {
+box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#Nikolayinfo p {
+margin: 0;
+}
+
+
+#Atanasinfo {
+border: 1px solid black;
+color: black;
+width: 12rem;
+height: 28rem;
+margin-right: 1rem;
+display: inline-block;
+}
+
+#Atanasinfo img {
+width: 100%;
+height: 180px;
+transition: opacity 350ms ease-in-out;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+#Atanasinfo p {
+text-align: center;
+margin-top: 0.5rem;
+}
+
+#Atanasinfo img:hover {
+opacity: 0.4;
+}
+
+#Atanasinfo figure {
+overflow: hidden;
+margin: 0;
+margin-top: -1rem;
+margin-bottom: -1rem;
+}
+
+#Atanasinfo figure figcaption {
+position: relative;
+display: block;
+transform: translateY(-100%);
+z-index: 1;
+transition: transform 350ms ease-in-out;
+left: 3rem;
+top: 3.5rem;
+visibility: collapse;
+font-size: x-large;
+font-weight: bold;
+text-shadow: 1px 1px 1px yellow;
+}
+
+#Atanasinfo:hover {
+box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+#Atanasinfo figure:hover figcaption {
+transform: translateY(+220%);
+visibility: visible;
+}
+
+#Atanasinfo:hover {
+box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#Atanasinfo p {
+margin: 0;
+}
+.allWrap {
+width: 100%;
+}
