@@ -1,0 +1,124 @@
+ #contactForm{
+            background: linear-gradient(chocolate, azure);
+	 text-align: center;
+        }
+
+.form {
+	text-align: left;
+}
+
+        #contactForm fieldset:hover {
+          border-color:lightblue;
+          box-shadow:1px 1px 1px rgba(0,0,0,0.3);
+        }
+    
+
+        #contactForm h1 {
+            font-size: x-large;
+            color: black;
+            margin: 0;
+            padding-top:1.5rem;
+            text-align:center;
+        }
+
+            #contactForm h2 {
+                font-size: medium;
+                color: black;
+                margin: 0;
+                text-align: center;
+            }
+
+            #contactForm fieldset {
+				position: relative;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                margin-left: 0;
+                font-size: medium;
+                color: black;
+                display: inline;
+                vertical-align: middle;
+            }
+
+                #contactForm fieldset p {
+                    width: 12.5em;
+                }
+
+        #contactForm input {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+            #contactForm input.reset {
+                height: 4em;
+                width: 13.5em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                margin-left: 0;
+                 font-weight: bold;
+            }
+
+            #contactForm input.submit {
+                height: 4em;
+                width: 13.5em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                font-weight: bold;
+            }
+
+
+        #contactForm .form {
+            width: 10rem;
+            display: inline-block;
+            vertical-align: top;
+            display: inline;
+            align-content:center;
+        }
+
+        #contactForm legend {
+            text-align: center;
+        }
+
+        #contactForm p {
+            padding-left: 0.4em;
+        }
+
+        #contactForm div {
+            display: inline;
+        }
+            #contactForm textarea {
+                width: 26em;
+                margin-left: 0.5em;
+            }
+
+        #contactForm select {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #SoftUniLogo {
+            width: 150px;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            border: 1px solid darkblue;
+            box-shadow: 1px 1px 8px;
+            transition: 5s;
+        }
+
+            #SoftUniLogo:hover {
+                transform: rotate3d(1, 0, 0, 360deg) rotate3d(0, 1, 0, 360deg) rotate3d(0, 0, 1, 360deg);
+            }

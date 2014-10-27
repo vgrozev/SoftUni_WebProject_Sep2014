@@ -1,0 +1,9 @@
+ #videos {
+            background:linear-gradient(azure, aqua, azure);
+           
+        }
+
+            #videos h1 {
+                text-align: center;
+                margin: 0;
+            }

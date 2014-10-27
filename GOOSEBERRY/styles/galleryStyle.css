@@ -3,16 +3,26 @@ body {
   margin: 0; }
 
 .container {
-  background: #eee;
-  text-align: center; }
+  width: 99%;
+  margin: auto; }
+  .container::after {
+    content: "";
+    clear: both;
+    display: block; }
 
 .image {
-  display: inline-block;
-  margin: 32px;
-  width: 400px; }
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 20px;
+  margin: 0; }
+  .image:nth-of-type(4n+1) {
+    clear: both; }
   .image img {
-    max-width: 100%;
-    border-radius: 50px; }
+    width: 100%;
+    height: 350px;
+    border-radius: 20px; }
   .image figcaption .text {
     font-size: 24px;
     font-style: italic;
@@ -64,9 +74,29 @@ body {
         margin-right: 5px; }
     .image .extras a {
       text-decoration: none; }
-    .image .extras :link {
-      color: #9a0000; }
-    .image .extras :visited {
-      color: #b58080; }
+      .image .extras a:link {
+        color: #9a0000; }
+      .image .extras a:visited {
+        color: #b58080; }
+#titleGallery {
+	padding-top: 30px;
+}
 
-/*# sourceMappingURL=style.css.map */
+iframe {
+	float: left;
+	box-sizing: border-box;
+	padding: 30px;
+	width: 33%;
+	height: 400px;
+}
+
+iframe:nth-of-type(3n+1) {
+	clear: both;
+	
+}
+
+#videos:after {
+	content: " ";
+	clear: both;
+	display: block;
+}
