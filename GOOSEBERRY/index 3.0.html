@@ -13,8 +13,9 @@
 		<link rel="stylesheet" href="styles/footerStyle.css">
 		<link rel="stylesheet" href="styles/media-queries.css">
 		<link rel="stylesheet" href="styles/jokes_div.css">
+		<script src="scripts/explode.js"></script>
 	</head>
-	<body>
+	<body onload="init()">
 		<div class="allWrap">
 			<header>
 				<span>Welcome to SoftUNI-fier</span><br />
@@ -28,6 +29,7 @@
 					<li><a href="#videos">SoftUni Videos</a></li>
 					<li><a href="#gallery">Fun Gallery</a></li>
 					<li><a href="#jokes">The Jokes Section</a></li>
+					<li><a href="#game">Terminate Nakov</a></li>
 				</ul>
 			</header>
 
@@ -268,15 +270,42 @@
             </figure>         
          </section>
      </div>
-			<footer>
-				<br />
-				<section>
-					<ul style="list-style:none; margin:0">
-						<li style="line-height:2rem"><b>&copy; Gooseberry Design 2014, Team Project Work</b><br /></li>
-						<li style="line-height:2rem"><b> Web-Fundamentals Course - Software University, Bulgaria </b></li>
-					</ul>
-				</section>
-			</footer>
-		</div>
+     <div id="game">
+         <div style="display:none">
+		    <video width="420" height="315" id="sourcevid" preload="auto">
+                <source type="video/mp4" src="https://r5---sn-5hn7ym7r.googlevideo.com/videoplayback?fexp=908570%2C922241%2C924638%2C927622%2C930666%2C930672%2C931983%2C932404%2C936119%2C937432%2C942610%2C946601%2C947209%2C951912%2C952302%2C952901%2C957103&ip=87.162.78.145&mm=31&ipbits=0&ratebypass=yes&expire=1414465844&source=youtube&nh=EAQ&mv=m&key=yt5&mt=1414444188&mime=video%2Fmp4&ms=au&id=o-AEaOPuzrlOkZ_92rDJGHXklO4KkNBn3JzvrqOR_0FZrh&itag=18&signature=F5DF556D80EAD39C17DC227088138EE1D5CA43B5.03B29447498528BB81FE481CBD170EF1DDC46A40&requiressl=yes&sver=3&sparams=id%2Cip%2Cipbits%2Citag%2Cmime%2Cmm%2Cms%2Cmv%2Cnh%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&upn=Uz3FSZ4fFWI" />
+            </video>
+		    <canvas id="sourcecopy" width="420" height="315"></canvas>
+	    </div>
+	    <div>
+            <center>
+                <header>TERMINATE NAKOV</header>
+                <div>You are sitting quietly in your room, staring at the computer and seriously considering the possibility of it staring back at you. Your hands are shaking and typing commands on imaginary keyboard in your lap. You feel the pressure of hundred thousand lines bad code, written by arrogant wannabe programmers in their primitive languages. WHY?! Why taking the red pill? All because of one man - Nakov! Suddenly you realize that there is a way out! All you have to do is.... go back in time and annihilate the young Nakov, before he ever has the chance to do something meaningful and destroys the future, as you know it!</div>
+                <div style="text-align:center"> 
+                  <button onclick="playPause()">Play/Pause</button>
+                  <script>
+            var myVideo = document.getElementById("sourcevid"); 
+            function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause();}
+        </script>
+                </div>
+                <div style="z-index:1;position:relative;text-align:center;font-size:16px;font-weight:bold;width:1000px;top:60px;">Click video and cause as much collateral damage as possible!</div>
+                <canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)" style="border: solid 5px #666666"></canvas><br/>You may need to reload the page if video isn't streaming properly.
+            </center>
+        </div>
+     </div>
+     <footer>
+        <br />
+        <section>
+            <ul style="list-style:none; margin:0">
+                <li style="line-height:2rem"><b>&copy; Gooseberry Design 2014, Team Project Work</b><br /></li>
+                <li style="line-height:2rem"><b> Web-Fundamentals Course - Software University, Bulgaria </b></li>
+            </ul>
+        </section>
+    </footer>
+	</div>
 	</body>
 </html>
