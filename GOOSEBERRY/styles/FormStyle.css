@@ -1,0 +1,97 @@
+﻿  body {
+            background: #3b5997;
+        }
+
+      #contactForm  header {
+            font-family: Tahoma;
+            font-size: 60px;
+            font-weight: 900;
+            color: white;
+            margin-left:4.5em;
+        }
+
+      #contactForm  h1 {
+            font-family: Tahoma;
+            font-size: x-large;
+            color: white;
+            margin: 0;
+            margin-left: -17.5em;
+        }
+
+        #contactForm h2 {
+            font-family: Tahoma;
+            font-size: medium;
+            color: white;
+            margin: 0;
+            margin-left: -26.5em;
+        }
+
+        #contactForm fieldset {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            font-family: Tahoma;
+            font-size: medium;
+            color: white;
+            display: inline;
+        }
+
+        #contactForm input {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+            #contactForm input.reset {
+                height: 4em;
+                width: 28.5em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                font-weight:bold;
+            }
+
+            #contactForm input.submit {
+                height: 4em;
+                width: 35em;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+                font-weight: bold;
+            }
+
+
+        #contactForm .form {
+            width: 400px;
+            display: inline-block;
+            vertical-align: top;
+            display:inline;
+        }
+
+        #contactForm legend {
+            text-align: center;
+        }
+
+        #contactForm p {
+            padding-left: 0.4em;
+        }
+
+        #contactForm div {
+            display: inline;
+            
+        }
+
+        #contactForm select {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }

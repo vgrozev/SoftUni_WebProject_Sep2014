@@ -1,0 +1,95 @@
+﻿   #gallery {
+            background: linear-gradient(aqua,seashell);
+        }
+    .container {
+            background: #eee;
+            text-align: center;
+        }
+
+        .image {
+            display: inline-block;
+            margin: 32px;
+            width: 400px;
+        }
+
+            .image img {
+                max-width: 100%;
+                border-radius: 50px;
+            }
+
+            .image figcaption .text {
+                font-size: 24px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                color: #444;
+            }
+
+            .image .extras {
+                clear: both;
+                float: right;
+                font-weight: normal;
+                color: #444;
+            }
+
+                .image .extras .views {
+                    display: inline-block;
+                }
+
+                    .image .extras .views .viewsIcon {
+                        background-image: url("../images/views.png");
+                        display: inline-block;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: 0 2px;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                .image .extras .likes {
+                    display: inline-block;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+
+                    .image .extras .likes .likesIcon {
+                        background-image: url("../images/likes.png");
+                        display: inline-block;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: 0 2px;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                .image .extras .comments {
+                    display: inline-block;
+                }
+
+                    .image .extras .comments .commentsIcon {
+                        background-image: url("../images/comments.png");
+                        display: inline-block;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: 0 2px;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                .image .extras a {
+                    text-decoration: none;
+                }
+
+                .image .extras :link {
+                    color: #9a0000;
+                }
+
+                .image .extras :visited {
+                    color: #b58080;
+                }
