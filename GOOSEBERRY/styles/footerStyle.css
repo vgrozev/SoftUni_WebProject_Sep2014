@@ -1,5 +1,4 @@
 ﻿footer {
-            width:100%;
-            justify-content:center;
-               background:linear-gradient(crimson,yellow);
-        }
+    width: 100%;
+    background: linear-gradient(crimson,yellow);
+}

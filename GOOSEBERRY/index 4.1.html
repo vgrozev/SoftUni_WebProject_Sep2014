@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SoftUNI-fier</title>
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/headerStyle.css">
+    <link rel="stylesheet" href="styles/aboutusStyle.css">
+    <link rel="stylesheet" href="styles/contactformStyle.css">
+    <link rel="stylesheet" href="styles/videosStyle.css">
+    <link rel="stylesheet" href="styles/galleryStyle.css">
+    <link rel="stylesheet" href="styles/footerStyle.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="styles/jokes_div.css">
+    <script src="scripts/explode.js"></script>
+  
+</head>
+<body onload="init()">
+    <div class="allWrap">
+        <header>
+            <span>Welcome to SoftUNI-fier</span><br />
+            <div id="mottoouter">
+                <img class="star" src="http://upload.wikimedia.org/wikipedia/commons/9/9c/Golden_star.svg">
+                <span id="motto">Across ages, across countries and oceans - together we stand for a top mark in HTML5 and CSS!!!</span>
+            </div>
+            <ul>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#contactForm">Contact</a></li>
+                <li><a href="#videos">SoftUni Videos</a></li>
+                <li><a href="#gallery">Fun Gallery</a></li>
+                <li><a href="#jokes">Jokes</a></li>
+                <li><a href="#game">Terminate Nakov</a></li>
+            </ul>
+        </header>
+        <div id="aboutus">
+            <div class="mapWrap">
+                <figure id="figuremap">
+                    <img class="map" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/1798_Payne_Map_of_the_World_%28pre_1800_American_Map%29_-_Geographicus_-_World-payne-1798.jpg/1280px-1798_Payne_Map_of_the_World_%28pre_1800_American_Map%29_-_Geographicus_-_World-payne-1798.jpg" />
+                    <figure class="pinBoston">
+                        <img src="images/map_pin.png" alt="map">
+                        <figcaption><a href="#profiles">Boston</a></figcaption>
+                    </figure>
+                    <figure class="pinBerlin">
+                        <img src="images/map_pin.png" alt="map">
+                        <figcaption><a href="#profiles">Berlin</a></figcaption>
+                    </figure>
+                    <figure class="pinCopenhagen">
+                        <img src="images/map_pin.png" alt="map">
+                        <figcaption><a href="#profiles">Copenhagen</a></figcaption>
+                    </figure>
+                    <figure class="pinBulgaria">
+                        <img src="images/map_pin.png" alt="map">
+                        <figcaption><a href="#profiles">Bulgaria</a></figcaption>
+                    </figure>
+                </figure>
+            </div>
+            <div id="profiles">
+                <h1>Who we are?</h1><br />
+                <div id="Svetoslavinfo"><p><b>Svetoslav Haritonov</b></p><figure><figcaption>Berlin</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/b88ebb59-3271-4418-8cf2-47c64a8cda9f" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+                <div id="Vladimirinfo"><p><b>Vladimir Stoyanov</b></p><figure><figcaption>Boston</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/085988e7-c8cb-4eea-90fa-8e272089e62e" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+                <div id="Kirilinfo"><p><b>Kiril Manin</b></p><figure><figcaption>Copenhagen</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/3bedcb7e-06f4-423b-853d-14b9a6f9e0c1" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+                <div id="Nikolayinfo"><p><b>Nikolay Blazhev</b></p><figure><figcaption>Pleven</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/03672cb1-d761-46b8-b9a4-a67684b82ee8" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+                <div id="Atanasinfo"><p><b>Alexander Petrov</b></p><figure><figcaption>Varna</figcaption><img src="https://softuni.bg/Users/Profile/ShowAvatar/6a02f1eb-1767-4feb-a494-262f983f5731" /></figure><br /><span><b>About: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci lectus, interdum nec urna ac, laoreet tempus leo. Nulla rhoncus iaculis leo non tempor. Donec non magna et dui tempor.</span></div>
+            </div>
+        </div>
+        <div id="contactForm">
+            <h1>Want to talk to us about SoftUni?</h1><br />
+            <h2>Please submit the form below and we will get right back to you!</h2><br />
+            <form class="form">
+                <fieldset>
+                    <legend>Query details</legend><br />
+                    <input type="text" id="firstname" placeholder="Your first name" tabindex="1" /><input type="text" id="lastname" placeholder="Your last Name" tabindex="2" /><br />
+                    <input type="text" id="email" placeholder="Your (valid) email" pattern="[a-zA-z]*@[a-zA-z]*.[a-zA-Z]*" tabindex="2" /><input type="text" id="phonenumber" placeholder="Tel Number (digits only)" pattern="[0-9]*" tabindex="3" /><br />
+                    <input type="text" id="website" placeholder="Website" tabindex="5" /><select id="country" required style="margin-left: 0.5em; width: 9.8rem; height: 1.7em;" tabindex="10"><option>Country</option><option>Bulgaria</option><option>Denmark</option><option>USA</option><option>Germany</option></select>
+                    <p style="width:12.5em">Birthday</p>
+                    <input type="date" id="date" tabindex="6" /> <a href="http://softuni.bg"><img id="SoftUniLogo" src="http://www.nakov.com/wp-content/uploads/2012/03/SoftUni-Logo.png"></a><br /><br />
+                    <p style="width:12.5em">Gender</p>
+                    <input type="radio" name="gender" id="gender1" tabindex="7" /> <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="gender2" tabindex="8" /> <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="gender3" tabindex="9" /> <label for="gender">Other</label> <br />
+                    <br />
+                    <p>Information about SoftUni</p>
+                    <textarea rows="5" required placeholder="What is your question?" tabindex="21"></textarea>
+                </fieldset>
+                <br />
+                <input class="reset" type="reset" value="Clear Form" tabindex="23" />
+                <input class="submit" value="Submit Form" type="submit" tabindex="22" />
+            </form>
+            <br /><br />
+            <h2>Looking forward to hear from you!</h2><br />
+        </div>
+        <div id="videos">
+            <h1>Quickstart videos of SoftUni</h1>
+            <iframe src="//www.youtube.com/embed/FDlYbapueHw" frameborder="0" allowfullscreen></iframe>
+            <iframe src="//www.youtube.com/embed/VcepQ-admxA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="//www.youtube.com/embed/pu_2VTnggSo" frameborder="0" allowfullscreen></iframe>
+            <iframe src="//www.youtube.com/embed/8Pjll9ZM-gs" frameborder="0" allowfullscreen></iframe>
+            <iframe src="//www.youtube.com/embed/Xg2iuWUkY8w" frameborder="0" allowfullscreen></iframe>
+            <iframe src="//www.youtube.com/embed/M4zua8s3P84" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="gallery" class="container">
+            <h1 id="titleGallery">Fun Gallery</h1>
+            <figure class="image">
+                <img src="images/2.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Who was the first on the moon?</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">31<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">6<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">12<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/1.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Someone's feelings after the exam in Java or C#</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">50<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">13<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">44<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/3.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Mutant powers</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">110<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">63<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">11<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/4.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">In another universe</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">141<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">38<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">49<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/5.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">SoftUni - soon in a town near you!</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">69<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">53<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">9<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/6.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">DaVinci code vs Nakov's code</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">77<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">34<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">4<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/7.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Sometimes in a tough situation you are like - wwnd?! (What will Nakov do?!?)</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">98<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">61<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">14<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/8.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">SoftUni - 1 year old</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">153<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">56<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">7<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/9.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Documentary from the near future on the early years of Nakov</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">150<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">35<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">24<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/10.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Aliens be like - yeah, I know this guy!</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">182<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">88<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">30<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/11.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">If Bulgarian sites had paper editions</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">53<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">16<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">54<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/12.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Proof that anyone can learn how to code!</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">161<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">76<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">21<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/15.1.png" alt="flower">
+                <figcaption>
+                    <div class="text">Explaining reality</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">170<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">19<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">14<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/17.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Meanwhile in Mountain View</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">102<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">31<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">12<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/18.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">"Nakov Dancing" postmark</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">102<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">31<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">12<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/14.1.jpg" alt="flower">
+                <figcaption>
+                    <div class="text">Hacking reality</div>
+                    <div class="extras">
+                        <div class="views" title="Views"><a href="#">102<div class="viewsIcon"></div></a></div>
+                        <div class="likes" title="Likes"><a href="#">31<div class="likesIcon"></div></a></div>
+                        <div class="comments" title="Comments"><a href="#">12<div class="commentsIcon"></div></a></div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="jokes">
+                <h1>SoftUni Jokes</h1>
+            <section>
+                <h3>How SoftUni works:</h3>
+                <p>
+                    <span>In class</span>: 2+2=4.<br />
+                    <span>Homework</span>: 2+4+2=8.<br />
+                    <span>Exam</span>: John had 4 apples. He eats one and gives one to a friend. Calculate the Sun's mass.<br />
+                </p>
+            </section>
+            <section>
+                <h3>The "Nakov" test:</h3>
+                <figure>
+                    <img id="html_test" src="images/html5_test.PNG" alt="HTML 5 test" width="320" height="450">
+                    <figcaption>...yeah, this is correct!</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Ако Наков говореше за селското стопанство:</h3>
+                <div>
+                    <p>
+                        -----------------<br />
+                        - Някой от вас колеги виждал ли е жив кон?<br />
+                        …2 ма…само….  такааа, ами значи ще обясня: <br />
+                        -   Конят е четирикрако животно много разпространено в селското стопанство в близкото минало. Може да се използва като товарно животно или за транспорт.<br />
+                        -   Няма нищо особено в коня, но в домашното за 3 та задача съм ви дал да си поиграете малко с един. Подготвен човек може да я свърши задачата за около 3 дена а неподготвен до 1 седмица.<br />
+                        Мисля даже да ви дам подобна задача на изпита, ама няма да е толкова опростена, и може би няма да използваме кон. …, но няма да е кои знае колко трудна, тук знаенето на основните принципи е най- важното, и няма да си губим времето със „special cases”.<br />
+                        Ето сега ще ви покажа едно демо което може да използвате като отправна точка за тази 3-та задача която е свързана с коня (другите животни ще ги „засегнем“ по късно)<br />
+                        --------------------<br />
+                    </p>
+                </div>
+                <figure id="kon">
+                    <img src="images/kon.gif" alt="kon-demo">
+                    <figcaption style="text-align:center">...this is just a simple example!</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div id="game" style="background: linear-gradient(lawngreen,crimson); ">
+            <div style="display: none">
+                <video width="420" height="315" id="sourcevid" preload="auto">
+                    <source type="video/mp4" src="https://r5---sn-5hn7ym7r.googlevideo.com/videoplayback?fexp=908570%2C922241%2C924638%2C927622%2C930666%2C930672%2C931983%2C932404%2C936119%2C937432%2C942610%2C946601%2C947209%2C951912%2C952302%2C952901%2C957103&ip=87.162.78.145&mm=31&ipbits=0&ratebypass=yes&expire=1414465844&source=youtube&nh=EAQ&mv=m&key=yt5&mt=1414444188&mime=video%2Fmp4&ms=au&id=o-AEaOPuzrlOkZ_92rDJGHXklO4KkNBn3JzvrqOR_0FZrh&itag=18&signature=F5DF556D80EAD39C17DC227088138EE1D5CA43B5.03B29447498528BB81FE481CBD170EF1DDC46A40&requiressl=yes&sver=3&sparams=id%2Cip%2Cipbits%2Citag%2Cmime%2Cmm%2Cms%2Cmv%2Cnh%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&upn=Uz3FSZ4fFWI" />
+                </video>
+                <canvas id="sourcecopy" width="420" height="315"></canvas>
+            </div>
+            <div>
+                <center>
+                    <h1 style="margin-top:0; padding-top:2rem;">TERMINATE NAKOV</h1>
+                    <div style="line-height:3.5rem; font-weight:600; font-size:larger; padding-bottom:1rem">You are sitting quietly in your room, staring at the computer and seriously considering the possibility of it staring back at you. Your hands are shaking and typing commands on imaginary keyboard in your lap. You feel the pressure of hundred thousand lines bad code, written by arrogant wannabe programmers in their primitive languages. WHY?! Why taking the red pill? All because of one man - Nakov! Suddenly you realize that there is a way out! All you have to do is.... go back in time and annihilate the young Nakov, before he ever has the chance to do something meaningful and destroys the future, as you know it!</div>
+                    <div style="text-align:center">
+                        <button onclick="playPause()">Play/Pause</button>
+                        <script>
+                            var myVideo = document.getElementById("sourcevid");
+                            function playPause() {
+                                if (myVideo.paused)
+                                    myVideo.play();
+                                else
+                                    myVideo.pause();
+                            }
+                        </script>
+                    </div>
+                    <div style="z-index:1;position:relative;text-align:center;font-size:16px;font-weight:bold;width:1000px;top:60px;">Click video and cause as much collateral damage as possible!</div>
+                    <canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)" style="border: solid 5px #666666"></canvas><br />You may need to reload the page if video isn't streaming properly.
+                </center>
+            </div>
+        </div>
+        <footer>
+            <br />
+            <section>
+                <ul style="list-style:none; margin:0">
+                    <li style="line-height:2rem"><b>&copy; Gooseberry Design 2014, Team Project Work</b><br /></li>
+                    <li style="line-height:2rem"><b> Web-Fundamentals Course - Software University, Bulgaria </b></li>
+                </ul>
+            </section>
+            <section>
+                <a style ="margin-left:2.6rem;"href="http://validator.w3.org/">
+                    <img src="images/html.png" alt="HTML Validator">
+                </a>
+                <a style=""href="http://www.css-validator.org/">
+                    <img src="images/css.png" alt="CSS Validator">
+                </a>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
