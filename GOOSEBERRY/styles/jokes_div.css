@@ -1,19 +1,42 @@
- #jokes {
-            background: linear-gradient(chocolate, azure, navy, lightblue);
-            /* border: 2px groove grey; */
-            color: #fff;          
-        }
-            #jokes span {
-                text-decoration: underline;
-                color: black;
-            }
-            #jokes p {
-                margin-left: 50px;
-            }
-            #jokes h3 {
-                text-decoration: blink;
-                padding-left: 25px;
-            }
-            #jokes header {
-                background: linear-gradient(azure, chocolate);
-            }
+#jokes {
+    background: linear-gradient(paleturquoise, lawngreen);
+   
+}
+
+    #jokes h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    #jokes span {
+        text-decoration: underline;
+        color: black;
+        font-weight:bold;
+    }
+
+    #jokes p {
+        margin-left: 50px;
+        font-family: 'Comic Sans MS', Arial;
+    }
+
+    #jokes h3 {
+        text-decoration: blink;
+        padding-left: 25px;
+    }
+
+    #jokes section:nth-child(2) {
+        display: inline;
+        text-align:center;
+        border-bottom: 1px solid grey;
+    }
+
+    #jokes section:nth-child(3) {
+        display: inline;
+        text-align:center;
+        border-bottom: 1px solid grey;
+    }
+
+    #kon {
+       margin: 0 auto 0 auto;
+display: table;
+    }

@@ -3,7 +3,7 @@ body {
   margin: 0; }
 
 .container {
-  width: 99%;
+  width: 100%;
   margin: auto; }
   .container::after {
     content: "";
@@ -80,6 +80,8 @@ body {
         color: #b58080; }
 #titleGallery {
 	padding-top: 30px;
+    text-align:center;
+    margin: 0;
 }
 
 iframe {
@@ -99,4 +101,10 @@ iframe:nth-of-type(3n+1) {
 	content: " ";
 	clear: both;
 	display: block;
+}
+
+#gallery {
+    background:linear-gradient(azure, paleturquoise);
+
+
 }
